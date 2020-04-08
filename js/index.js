@@ -60,7 +60,7 @@ el.onwheel = zoom;
 // ---------------------------------------------//
 
 // 	* [ 7 ] `load`
-window.addEventListener("load", () => {
+window.addEventListener("load", event => {
   alert("Page is fully loaded...let's do this!")
 })
 // ---------------------------------------------//
@@ -110,6 +110,8 @@ function reportWindowSize() {
 }
 
 window.onresize = reportWindowSize;
+
+window.addEventListener('resize', reportWindowSize);
 
 // ---------------------------------------------//
 
